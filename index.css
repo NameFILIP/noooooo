@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.pushable {
+  background: hsl(340deg 100% 32%);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 42px 42px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+  background: hsl(345deg 100% 47%);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
