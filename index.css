@@ -16,13 +16,18 @@ body {
   outline-offset: 4px;
 }
 .front {
-  display: block;
-  padding: 42px 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   font-size: 1.25rem;
   background: hsl(345deg 100% 47%);
   color: white;
   transform: translateY(-6px);
+  will-change: transform;
+  transition: transform 250ms;
 }
 
 .pushable:active .front {
