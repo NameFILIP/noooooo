@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Whatever you do, do not press the red button." />
     <title>Noooooo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <button type="button" id="playButton" class="pushable">
-      <span class="front">DO NOT PRESS</span>
-    </button>
+    <main>
+      <button
+        type="button"
+        id="playButton"
+        class="pushable"
+        aria-label="Do not press this button"
+      >
+        <span class="shadow" aria-hidden="true"></span>
+        <span class="edge" aria-hidden="true"></span>
+        <span class="front">DO NOT PRESS</span>
+      </button>
+    </main>
 
-    <audio id="audioPlayer">
+    <audio id="audioPlayer" preload="auto">
       <source src="noooooo.wav" type="audio/wav" />
       Your browser does not support the audio element.
     </audio>
